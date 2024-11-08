@@ -12,9 +12,11 @@ def main():
             player = Player(player_dict)
             players.append(player)
 
+    players2 = sorted(players, key=lambda x: x.get_points(), reverse=True)
+
     print("Players from FIN:\n")
 
-    for player in players:
+    for player in players2:
         print(player)
 
 if __name__ == "__main__":
